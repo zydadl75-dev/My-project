@@ -1,82 +1,60 @@
 <!DOCTYPE html>
-
 <html lang="ar" dir="rtl">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <title>الصفحة الأولى - التسجيل</title>
-
+    <title>الصفحة الأولى - إنشاء حساب ودخول</title>
 </head>
-
 <body>
 
-    <section>
-
+    <section id="register">
         <h2>إنشاء حساب جديد (Registration)</h2>
+        <form action="page 2.html">
+            <label>الاسم الكامل:</label><br>
+            <input type="text" name="fullname" required><br><br>
 
-        <form action="#">
+            <label>البريد الإلكتروني:</label><br>
+            <input type="email" name="email" required><br><br>
 
-            <label for="fullname">الاسم الكامل:</label><br>
+            <label>رقم الهاتف:</label><br>
+            <input type="tel" name="phone"><br><br>
 
-            <input type="text" id="fullname" name="fullname" required><br><br>
-
-            <label for="email">البريد الإلكتروني:</label><br>
-
-            <input type="email" id="email" name="email" required><br><br>
-
-            <label for="phone">رقم الهاتف:</label><br>
-
-            <input type="tel" id="phone" name="phone"><br><br>
-
-            <label for="dob">تاريخ الميلاد:</label><br>
-
-            <input type="date" id="dob" name="dob"><br><br>
-
-            <label for="gender">الجنس:</label>
-
-            <select id="gender" name="gender">
-
+            <label>الجنس:</label>
+            <select name="gender">
                 <option value="male">ذكر</option>
-
                 <option value="female">أنثى</option>
-
             </select><br><br>
 
-                 <input type="submit" value="تسجيل">
+            <label>كلمة المرور:</label><br>
+            <input type="password" name="new_pass" required><br><br>
 
-   </form>
+            <label>تأكيد كلمة المرور:</label><br>
+            <input type="password" name="confirm_pass" required><br><br>
 
-</section
+            <button type="submit">إتمام التسجيل</button>
+        </form>
+    </section>
 
     <hr>
 
     <section>
-
         <h2>تسجيل الدخول (Login)</h2>
+        <form action="page2.html"> 
+            <label>اسم المستخدم:</label><br>
+            <input type="text" name="user" required><br><br>
 
-        <form action="#">
-
-            <label for="user">اسم المستخدم:</label><br>
-
-            <input type="text" id="user" name="user" required><br><br>
-
-            <label for="pass">كلمة المرور:</label><br>
-
-            <input type="password" id="pass" name="pass" required><br><br>
+            <label>كلمة المرور:</label><br>
+            <input type="password" name="pass" required><br><br>
 
             <button type="submit">دخول</button>
-
         </form>
-
     </section>
 
-    <br>
-
-    <a href="page2.html">الانتقال إلى الصفحة الثانية (المعلومات) ←</a>
+    <br><br>
+    <hr>
+    
+    <footer>
+        <a href="page2.html">الانتقال إلى الصفحة الثانية (المعلومات) ←</a>
+    </footer>
 
 </body>
-
 </html>
-
